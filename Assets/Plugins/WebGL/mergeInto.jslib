@@ -140,7 +140,7 @@ var func = {
     FBShowAds: function () {
         MsgMgr.Log('Ads Show Start');
         MsgMgr.Log('AdMgr.AdList.Length=' + AdMgr.AdList.length);
-        if (AdMgr.length > 0) {
+        if (AdMgr.AdList.length > 0) {
             var preloadedRewardedVideo = AdMgr.AdList.pop();
             preloadedRewardedVideo.showAsync().then(function () {
                 MsgMgr.Log('Ads Show End');
